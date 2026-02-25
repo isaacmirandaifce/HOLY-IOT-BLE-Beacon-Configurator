@@ -2,7 +2,7 @@
 
 Uma biblioteca Python leve e assíncrona para configuração de Beacons BLE (Bluetooth Low Energy) que utilizam o protocolo **UART Nordic**. Este projeto foi desenvolvido especificamente para facilitar a automação e configuração em lote de dispositivos Holy-IoT.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 O configurador permite alterar os principais parâmetros do beacon via comandos GATT:
 
@@ -14,7 +14,7 @@ O configurador permite alterar os principais parâmetros do beacon via comandos 
 
 ---
 
-## 🛠️ Pré-requisitos
+##  Pré-requisitos
 
 Certifique-se de ter o Python 3.7+ instalado e a biblioteca `bleak` (Bluetooth Low Energy platform Agnostic Klient).
 
@@ -25,14 +25,14 @@ pip install bleak
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 * `beacon_configurator.py`: O core da biblioteca contendo a classe `BeaconConfigurator`.
 * `test_beacon_configurator.py`: Script de exemplo para homologação e testes rápidos.
 
 ---
 
-## 💻 Como Usar
+##  Como Usar
 
 ### 1. Configuração Básica
 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
 ---
 
-## ⚙️ Protocolo de Comunicação
+##  Protocolo de Comunicação
 
 A biblioteca comunica-se através do UUID de serviço UART da Nordic:
 
@@ -85,7 +85,7 @@ Cada pacote é construído dinamicamente seguindo a estrutura:
 
 ---
 
-## ⚠️ Notas Importantes
+##  Notas Importantes
 
 * **Distância:** Certifique-se de que o beacon está próximo ao computador durante a configuração para evitar falhas de escrita.
 * **Permissões:** Em sistemas Linux, pode ser necessário executar o script com privilégios de `sudo` ou configurar as permissões do adaptador Bluetooth.
